@@ -1,0 +1,123 @@
+html,
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	width: 100%;
+	min-width: 600px;
+	min-height: 600px;
+	margin: 0%;
+	padding: 0%;
+	background-color: #ffffff;
+}
+header {
+	height: 15%;
+	width: 100%;
+	background-color: #4a6bff;
+	align-items: center;
+}
+.upper-quote {
+	padding: 10px;
+	width: 30%;
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+	position: relative;
+	top: 30%;
+	left: 10%;
+}
+.page {
+	min-height: 70%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	outline: 1px solid rgb(4, 0, 63);
+}
+nav {
+	width: 50%;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-top: 25px;
+	overflow: auto;
+	text-align: center;
+	align-items: center;
+	font-size: larger;
+	background-color: #fff177;
+	border: 1px solid yellow;
+}
+nav a {
+	margin-right: 20px;
+	color: blue;
+	font-weight: bold;
+	text-decoration: none;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+aside,
+article {
+	width: 23%;
+	overflow: auto;
+	text-align: center;
+	background-color: #bafcba;
+	outline: 1px solid #85fd85;
+}
+footer {
+	height: 15%;
+	width: 100%;
+	background-color: #4a6bff;
+	display: flex;
+	flex-direction: row;
+}
+.lower-text {
+	position: relative;
+	height: 80%;
+	width: 50%;
+	padding: 5px;
+	overflow: hidden;
+	color: white;
+	font-weight: 200;
+	text-align: center;
+}
+.lower-quote-layout {
+	width: 50%;
+}
+.lower-quote {
+	padding: 10px;
+	width: 60%;
+	background-color: white;
+	border-radius: 10px;
+	position: relative;
+	top: 30%;
+	left: 20%;
+	text-align: center;
+	overflow: hidden;
+}
+.popup-layout {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: #0000009e;
+	z-index: 10;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.popup {
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+}
+button {
+	border: 1px solid gray;
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px 20px 10px 20px;
+	cursor: pointer;
+}
+button.popup-button {
+	position: relative;
+	left: 75%;
+	bottom: 5%;
+	border: 1px solid black;
+}

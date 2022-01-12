@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.popup-button').on('click', function() {
+                $('.popup-layout').css('display', 'flex');
+            });
+            $('.popup-layout').on('click', function(event) {
+                if (event.target === this) {
+                    $('.popup-layout').css('display', 'none');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="popup-layout">
+        <div class="popup">
+            <img class="imgmap" src="images/yt.png" width="227" height="175" alt="Map" usemap="#Navigation"></div>
+              <p><map id="Navigation" name="Navigation">
+                <area shape="poly" coords="91,59,146,88,91,116" href="https://youtu.be/dQw4w9WgXcQ" alt="rickroll">
+              </map></p>
+        </div>
+    </div>
+
+    <header>
+        <section class="upper-quote">
+            Main page
+        </section>
+
+        <button class="popup-button">Map example</button>
+    </header>
+
+    <section class="page">
+        <nav>
+            <a href="https://youtu.be/dQw4w9WgXcQ">C++ за 3 минуты 32 секунды</a>
+            <br><br>
+            <a href="menu.html">Menu</a>
+            <br><br>
+            <a href="index.html">Main page</a>
+            <br><br>
+            <a href="index2.html">Second page</a>
+            <br><br>
+            <a href="index3.html">Third page</a>
+        </nav>
+
+        <main>
+            <h2>What is Node.js?</h2>
+            Node.js is a server-side platform built on Google Chrome's JavaScript Engine (V8 Engine). Node.js was developed by Ryan Dahl in 2009 and its latest version is v0.10.36. The definition of Node.js as supplied by its official documentation is as follows −
+            <br>
+            "Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices."
+            <br>
+            Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.
+            <br>
+            Node.js also provides a rich library of various JavaScript modules which simplifies the development of web applications using Node.js to a great extent.
+            <br>
+            <h2>Features of Node.js</h2>
+            Following are some of the important features that make Node.js the first choice of software architects.
+            <br>
+            <ul>
+                <li>Asynchronous and Event Driven − All APIs of Node.js library are asynchronous, that is, non-blocking. It essentially means a Node.js based server never waits for an API to return data. The server moves to the next API after calling it and a notification mechanism of Events of Node.js helps the server to get a response from the previous API call.</li>
+                <li>Very Fast − Being built on Google Chrome's V8 JavaScript Engine, Node.js library is very fast in code execution.</li>
+                <li>Single Threaded but Highly Scalable − Node.js uses a single threaded model with event looping. Event mechanism helps the server to respond in a non-blocking way and makes the server highly scalable as opposed to traditional servers which create limited threads to handle requests. Node.js uses a single threaded program and the same program can provide service to a much larger number of requests than traditional servers like Apache HTTP Server.</li>
+                <li>No Buffering − Node.js applications never buffer any data. These applications simply output the data in chunks.</li>
+                <li>License − Node.js is released under the MIT license.</li>
+            </ul>
+            <br>
+            <h2>Who Uses Node.js?</h2>
+            Following is the link on github wiki containing an exhaustive list of projects, application and companies which are using Node.js. This list includes eBay, General Electric, GoDaddy, Microsoft, PayPal, Uber, Wikipins, Yahoo!, and Yammer to name a few.
+            <br><br>
+            Try this button with js script handler:
+            <button id="swap-button">Swap texts</button>
+        </main>
+
+        <section class="side">
+            <section class="quote">
+                А сегодня в завтрашний день не все могут смотреть. 
+                <br>
+                Вернее смотреть могут не только лишь все, мало кто может это делать...
+            </section>
+
+            <section class="side-lower">
+                <article id="block-5" style="min-width: 320px; min-height: 180px;">
+                    <img class="img-no-map" src="images/konodioda.png" width="320" height="180" alt="No map"></div>
+                    You thought it was an article, but it was me, Dio!
+                    <h4>Топ 10 языков программирования в 2021 году по версии TIOBE:</h4>
+                    <ol>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>C#</li>
+                        <li>R</li>
+                        <li>Go</li>
+                        <li>HTML</li>
+                        <li>Swift</li>
+                    </ol>
+                    <p>Try out color by selecting or type your own and select:</p>
+                    <input class="color-input" id="clrs" value='"black", "white", "gray", "silver", "maroon", "red", "purple", "fushsia", "green", "lime", "olive", "yellow", "navy", "blue", "teal", "aqua".'></input>
+                    <p id="log">You still not chosed anything!</p>
+                    <button id="save-button">Save config!</button>
+                    <button id="clear-button">Clear config!</button>
+                    <p id="log-2"></p>
+                    <br>
+                    <form action>
+                        <p>Area:</p>
+                        <p><input id="form-5" readonly></p>
+                    </form>
+                </article>
+
+                <aside id="block-6">
+                    <h3>Симптомы коронавируса</h3>
+                    Часто наблюдаемые симптомы:
+                    <ul>
+                        <li>повышение температуры тела;</li>
+                        <li>сухой кашель;</li>
+                        <li>утомляемость.</li>
+                    </ul>
+                    <br>
+                    У некоторых инфицированных могут также наблюдаться:
+                    <ul>
+                        <li>различные болевые ощущения;</li>
+                        <li>боль в горле;</li>
+                        <li>диарея;</li>
+                        <li>конъюнктивит;</li>
+                        <li>потеря обоняния и вкусовых ощущений;</li>
+                        <li>сыпь на коже или депигментация ногтей на руках и ногах.</li>
+                    </ul>
+                    <br>
+                    Симптомы тяжелой формы заболевания:
+                    <ul>
+                        <li>затрудненное дыхание или одышка;</li>
+                        <li>ощущение сдавленности или боль в грудной клетке;</li>
+                        <li>нарушение речи или двигательных функций.</li>
+                    </ul>
+                    <h4>Следите за своим самочувствием!</h4>
+                </aside>
+            </section>
+        </section>
+    </section>
+
+    <footer>
+        <section class="lower-text" id="toswap-1">
+            Здесь находится огромный кусок текста, который показывает, что тест никуда не вылезает, и футер не едет, короче все шикарно, даже добавить нечего. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет.  Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. Блоки не едут. Кукуха не едет. 
+        </section>
+        <section class="lower-quote-layout">
+            <section class="lower-quote">
+                Amogus ඞ
+            </section>
+        </section>
+    </footer>
+    <script src='js/swap.js'></script>
+    <script src='js/area.js'></script>
+    <script src='js/cookies.js'></script>
+    <script src='js/select.js'></script>
+</body>
+</html>

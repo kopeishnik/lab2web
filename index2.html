@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.popup-button').on('click', function() {
+                $('.popup-layout').css('display', 'flex');
+            });
+            $('.popup-layout').on('click', function(event) {
+                if (event.target === this) {
+                    $('.popup-layout').css('display', 'none');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="popup-layout">
+        <div class="popup">
+            <img class="imgmap" src="images/yt.png" width="227" height="175" alt="Map" usemap="#Navigation"></div>
+              <p><map id="Navigation" name="Navigation">
+                <area shape="poly" coords="91,59,146,88,91,116" href="https://youtu.be/dQw4w9WgXcQ" alt="rickroll">
+              </map></p>
+        </div>
+    </div>
+
+    <header>
+        <section class="upper-quote">
+            Second page
+        </section>
+
+        <button class="popup-button">Map example</button>
+    </header>
+
+    <section class="page">
+        <nav>
+            <a href="https://youtu.be/dQw4w9WgXcQ">C++ за 3 минуты 32 секунды</a>
+            <br><br>
+            <a href="menu.html">Menu</a>
+            <br><br>
+            <a href="index.html">Main page</a>
+            <br><br>
+            <a href="index2.html">Second page</a>
+            <br><br>
+            <a href="index3.html">Third page</a>
+        </nav>
+
+        <main>
+            <h2>Kira Yoshikage's speech</h2>
+            My name is Yoshikage Kira. I’m 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest. I don’t smoke, but I occasionally drink. I’m in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning.
+            <br>
+            I was told there were no issues at my last check-up. I’m trying to explain that I’m a person who wishes to live a very quiet life. I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night. That is how I deal with society, and I know that is what brings me happiness. Although, if I were to fight I wouldn’t lose to anyone.
+        </main>
+
+        <section class="side">
+            <section class="quote">
+                А сегодня в завтрашний день не все могут смотреть. 
+                <br>
+                Вернее смотреть могут не только лишь все, мало кто может это делать...
+            </section>
+
+            <section class="side-lower">
+                <article style="min-width: 250px; min-height: 250px;">
+                    <img class="img-no-map" src="images/kaef.jpg" width="250" height="250" alt="No map"></div>
+                    <h4>Топ 10 языков программирования в 2021 году по версии TIOBE:</h4>
+                    <ol>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>C#</li>
+                        <li>R</li>
+                        <li>Go</li>
+                        <li>HTML</li>
+                        <li>Swift</li>
+                    </ol>
+                </article>
+
+                <aside>
+                    <h3>Симптомы коронавируса</h3>
+                    Часто наблюдаемые симптомы:
+                    <ul>
+                        <li>повышение температуры тела;</li>
+                        <li>сухой кашель;</li>
+                        <li>утомляемость.</li>
+                    </ul>
+                    <br>
+                    У некоторых инфицированных могут также наблюдаться:
+                    <ul>
+                        <li>различные болевые ощущения;</li>
+                        <li>боль в горле;</li>
+                        <li>диарея;</li>
+                        <li>конъюнктивит;</li>
+                        <li>потеря обоняния и вкусовых ощущений;</li>
+                        <li>сыпь на коже или депигментация ногтей на руках и ногах.</li>
+                    </ul>
+                    <br>
+                    Симптомы тяжелой формы заболевания:
+                    <ul>
+                        <li>затрудненное дыхание или одышка;</li>
+                        <li>ощущение сдавленности или боль в грудной клетке;</li>
+                        <li>нарушение речи или двигательных функций.</li>
+                    </ul>
+                    <h4>Следите за своим самочувствием!</h4>
+                </aside>
+            </section>
+        </section>
+    </section>
+
+    <footer>
+        <section class="lower-text">
+            Здесь находится огромный кусок текста, который показывает, что тест никуда не вылезает, и футер не едет, короче все шикарно, даже добавить нечего. Блоки не едут. Кукуха не едет.
+        </section>
+        <section class="lower-quote-layout">
+            <section class="lower-quote">
+                Amogus ඞ
+            </section>
+        </section>
+    </footer>
+</body>
+</html>
